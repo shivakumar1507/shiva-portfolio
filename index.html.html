@@ -1234,56 +1234,60 @@ img,video,canvas,svg{max-width:100%;height:auto}
 /* ── Responsive: tablet ── */
 @media(max-width:900px){
   .cs-body { grid-template-columns:1fr }
-  .cs-left { border-right:none;border-bottom:1px solid var(--border);padding:1.75rem 1.75rem }
-  .cs-right-footer { padding:1rem 1.75rem }
-  .cs-preview-area { min-height:240px;padding:1.25rem }
-  .cs-header { padding:1.6rem 1.75rem 1.3rem }
+  .cs-left { border-right:none;border-bottom:1px solid var(--border) }
   .cs-metrics { grid-template-columns:repeat(3,1fr) }
 }
 
-/* ── Responsive: mobile (matches exp-card style) ── */
-@media(max-width:600px){
+/* ── Responsive: mobile — mirrors exp-card rhythm exactly ── */
+@media(max-width:640px){
+  /* Section uses same padding as all other sections */
   #projects { padding:3.75rem 1rem }
-  .cs-section-head { margin-bottom:2.5rem }
-  .cs-section-title { font-size:clamp(1.6rem,6vw,2rem) }
-  .cs-section-sub { font-size:.88rem;line-height:1.75 }
+  .cs-section-head { margin-bottom:2rem }
+  .cs-section-title { font-size:clamp(1.5rem,6.5vw,2rem) }
+  .cs-section-sub { font-size:.88rem;line-height:1.75;margin-bottom:0 }
 
-  .cs-card { border-radius:16px;margin-bottom:1.75rem }
+  /* Card shell — same radius + gap as exp-card */
+  .cs-card { border-radius:14px;margin-bottom:1.5rem }
 
-  .cs-header { padding:1.35rem 1.1rem 1.1rem;flex-wrap:wrap;gap:.75rem }
-  .cs-num { font-size:.63rem;margin-bottom:.38rem }
-  .cs-title { font-size:1.05rem;line-height:1.28 }
-  .cs-cats { gap:.38rem;flex-wrap:wrap }
-  .cs-cat { font-size:.65rem;padding:.2rem .62rem }
-  .cs-header-actions { width:100%;display:flex;gap:.5rem }
-  .cs-btn { font-size:.74rem;padding:.42rem .9rem }
-  .cs-btn.cs-btn-primary { flex:1;justify-content:center }
+  /* Header — same horizontal padding as exp-card */
+  .cs-header { padding:1.35rem 1.1rem 1.1rem;flex-direction:column;gap:.65rem }
+  .cs-header-left { width:100% }
+  .cs-num { font-size:.62rem;margin-bottom:.3rem }
+  .cs-title { font-size:1rem;line-height:1.28 }
+  .cs-cats { gap:.35rem;flex-wrap:wrap }
+  .cs-cat { font-size:.63rem;padding:.18rem .58rem }
+  .cs-header-actions { width:100% }
+  .cs-btn { font-size:.73rem;padding:.4rem .85rem;width:100%;justify-content:center }
+  .cs-btn.cs-btn-primary { width:100%;justify-content:center }
 
+  /* Left pane — identical to exp-card: 1.35rem 1.1rem, gap 1.35rem */
   .cs-left { padding:1.35rem 1.1rem;gap:1.35rem }
-  .cs-block-label { font-size:.63rem;margin-bottom:.5rem }
+  .cs-block-label { font-size:.62rem;margin-bottom:.45rem }
   .cs-block-text { font-size:.855rem;line-height:1.78 }
 
-  .cs-metrics { grid-template-columns:repeat(3,1fr);gap:.5rem }
-  .cs-metric { padding:.75rem .5rem;border-radius:10px }
-  .cs-metric-val { font-size:1rem;margin-bottom:.18rem }
-  .cs-metric-lbl { font-size:.59rem;line-height:1.35 }
+  /* Metrics — 2-col on mobile so values don't get crushed */
+  .cs-metrics { grid-template-columns:repeat(2,1fr);gap:.55rem }
+  .cs-metric { padding:.85rem .75rem;border-radius:10px }
+  .cs-metric-val { font-size:1.05rem;margin-bottom:.2rem }
+  .cs-metric-lbl { font-size:.62rem;line-height:1.35 }
 
-  .cs-insights { gap:.5rem }
-  .cs-insight-item { font-size:.835rem;line-height:1.65;gap:.65rem }
+  /* Insights */
+  .cs-insights { gap:.55rem }
+  .cs-insight-item { font-size:.835rem;line-height:1.7;gap:.6rem }
+  .cs-insight-dot { width:5px;height:5px;margin-top:.5rem;flex-shrink:0 }
 
-  .cs-stack { gap:.38rem }
+  /* Tech stack */
+  .cs-stack { gap:.38rem;flex-wrap:wrap }
   .cs-stag { font-size:.68rem;padding:.2rem .6rem }
 
-  .cs-preview-area { padding:1rem;min-height:190px }
-  .cs-zoom-hint { font-size:.63rem }
+  /* Dashboard preview */
+  .cs-preview-area { padding:1.1rem;min-height:200px }
+  .cs-zoom-hint { font-size:.62rem;padding:.28rem .55rem }
 
-  .cs-right-footer {
-    padding:.9rem 1.1rem;
-    flex-wrap:wrap;
-    gap:.55rem;
-  }
-  .cs-impact-line { font-size:.75rem;line-height:1.55;flex:1 1 100% }
-  .cs-right-footer .cs-btn { font-size:.72rem;padding:.38rem .82rem }
+  /* Footer bar */
+  .cs-right-footer { padding:1rem 1.1rem;flex-direction:column;align-items:flex-start;gap:.55rem }
+  .cs-impact-line { font-size:.76rem;line-height:1.55 }
+  .cs-right-footer .cs-btn { font-size:.72rem;padding:.38rem .8rem;width:auto }
 }
 </style>
 
