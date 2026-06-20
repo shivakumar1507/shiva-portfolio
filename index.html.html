@@ -1906,21 +1906,34 @@ portfolio monitoring, and India vs USA market comparison.</p>
     </div>
   </div>
 </div>
-<div id="modal5" class="cs-modal-overlay" onclick="closeModal(event,'modal5')">
+<div id="modal5" class="cs-modal-overlay"
+     onclick="closeModal(event,'modal5')">
+
   <div class="cs-modal-box">
+
     <button class="cs-modal-close"
             onclick="closeModal(null,'modal5')">
       ✕
     </button>
 
+    <button class="cs-gallery-btn cs-prev"
+            onclick="changeStockImage(-1,event)">
+      &#10094;
+    </button>
+
     <img id="modalStockImage"
          src="page1_portfolio_overview.png"
-         class="cs-modal-img"
-         alt="Stock Market Analytics Dashboard">
+         class="cs-modal-img">
+
+    <button class="cs-gallery-btn cs-next"
+            onclick="changeStockImage(1,event)">
+      &#10095;
+    </button>
 
     <div class="cs-modal-caption">
       Automated Stock Market ETL & Analytics Pipeline
     </div>
+
   </div>
 </div>
 <script>
