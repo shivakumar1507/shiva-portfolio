@@ -1889,11 +1889,19 @@ portfolio monitoring, and India vs USA market comparison.</p>
     <div class="cs-modal-caption">IPL Match Intelligence Dashboard · Tableau + SQL</div>
   </div>
 </div>
-<div id="modal4" class="cs-modal-overlay" onclick="closeModal(event,'modal4')">
+<div id="modal4" class="cs-modal-overlay"
+     onclick="closeModal(event,'modal4')">
+
   <div class="cs-modal-box">
+
     <button class="cs-modal-close"
             onclick="closeModal(null,'modal4')">
       ✕
+    </button>
+
+    <button class="cs-gallery-btn cs-prev"
+            onclick="changeLoanImage(-1,event)">
+      &#10094;
     </button>
 
     <img id="modalLoanImage"
@@ -1901,9 +1909,15 @@ portfolio monitoring, and India vs USA market comparison.</p>
          class="cs-modal-img"
          alt="Lending Club Dashboard">
 
+    <button class="cs-gallery-btn cs-next"
+            onclick="changeLoanImage(1,event)">
+      &#10095;
+    </button>
+
     <div class="cs-modal-caption">
       Lending Club Loan Portfolio Analytics
     </div>
+
   </div>
 </div>
 <div id="modal5" class="cs-modal-overlay"
