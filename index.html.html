@@ -816,6 +816,48 @@ img,video,canvas,svg{max-width:100%;height:auto}
   .exp-card{padding:1rem .85rem}
   .exp-list li{font-size:.8rem;line-height:1.72;padding:.48rem 0}
 }
+
+.cert-icon-databricks {
+  background: rgba(255, 54, 33, 0.10);
+  border: 1px solid rgba(255, 54, 33, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-icon-databricks img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.cert-icon-cisco {
+  background: rgba(4, 159, 217, 0.10);
+  border: 1px solid rgba(4, 159, 217, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-icon-cisco img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.cert-icon-frontlines {
+  background: rgba(70, 110, 255, 0.10);
+  border: 1px solid rgba(70, 110, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-icon-frontlines img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFC2N4PWQR"></script>
@@ -2240,10 +2282,40 @@ function changeStockImage(direction, event) {
       <p class="sec-sub">Structured programs reinforcing real-world analytical expertise.</p>
     </div>
     <div class="certs-grid">
-      <div class="cert-card reveal">
-        <div class="cert-icon ci-ai">
-          <svg width="22" height="22" fill="none" stroke="var(--blue)" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+	<div class="cert-card reveal">
+        <div class="cert-icon cert-icon-databricks">
+			<img src="Assets/databricks.svg" alt="Databricks Logo">
+		</div>
+        <div>
+          <div class="cert-title">Databricks Certified Data Engineer Professional</div>
+          <div class="cert-org" style="color:#ff6333">Databricks </div>
+          <div class="cert-desc">Validates advanced expertise in designing, developing, optimizing, and troubleshooting scalable data engineering solutions using Databricks, Apache Spark, SQL, and Python.</div>
         </div>
+      </div>
+	  <div class="cert-card reveal">
+        <div class="cert-icon cert-icon-databricks">
+			<img src="Assets/databricks.svg" alt="Databricks Logo">
+		</div>
+        <div>
+          <div class="cert-title">Databricks Certified Data Engineer Associate</div>
+          <div class="cert-org" style="color:#ff6333">Databricks </div>
+          <div class="cert-desc">Validates proficiency in building data pipelines, data ingestion, transformation, and processing using Databricks and Apache Spark, with a focus on developing reliable and scalable data engineering solutions.</div>
+        </div>
+      </div>
+	  <div class="cert-card reveal">
+        <div class="cert-icon cert-icon-databricks">
+			<img src="Assets/databricks.svg" alt="Databricks Logo">
+		</div>
+        <div>
+          <div class="cert-title">Databricks Certified Data Analyst Associate</div>
+          <div class="cert-org" style="color:#ff6333">Databricks </div>
+          <div class="cert-desc">Validates proficiency in Databricks SQL, data visualization, dashboard development, and transforming data into actionable business insights.</div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon cert-icon-frontlines">
+			<img src="Assets/flm.png" alt="Frontlines Edu-tech Logo">
+		</div>
         <div>
           <div class="cert-title">AI-Powered Data Analytics</div>
           <div class="cert-org">Frontlines Edu-tech Private Limited</div>
@@ -2251,33 +2323,13 @@ function changeStockImage(direction, event) {
         </div>
       </div>
       <div class="cert-card reveal">
-        <div class="cert-icon ci-cisco">
-          <svg width="22" height="22" fill="none" stroke="var(--green)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
-        </div>
+        <div class="cert-icon cert-icon-cisco">
+			<img src="Assets/cisco.svg" alt="Cisco Networking Academy Logo">
+		</div>
         <div>
           <div class="cert-title">Data Analytics Essentials</div>
           <div class="cert-org">Cisco Networking Academy</div>
           <div class="cert-desc">Full analytics process, statistical techniques, and hands-on labs using Excel, SQL, and Tableau with portfolio project delivery.</div>
-        </div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon ci-ibm">
-          <svg width="22" height="22" fill="none" stroke="var(--amber)" stroke-width="2" viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
-        </div>
-        <div>
-          <div class="cert-title">Data Science 101 (DS0101EN)</div>
-          <div class="cert-org">IBM Skills Build</div>
-          <div class="cert-desc">Core data science concepts — data mining, regression, visualization, structured vs unstructured data, and the data science methodology with business use cases.</div>
-        </div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon" style="background:rgba(255,99,51,0.12);border:1px solid rgba(255,99,51,0.25)">
-          <svg width="22" height="22" fill="none" stroke="#ff6333" stroke-width="2" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v5c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 10v5c0 1.66 3.58 3 8 3s8-1.34 8-3v-5"/><path d="M4 15v4c0 1.66 3.58 3 8 3s8-1.34 8-3v-4"/></svg>
-        </div>
-        <div>
-          <div class="cert-title">Databricks Certified Data Analyst Associate</div>
-          <div class="cert-org" style="color:#ff6333">Databricks </div>
-          <div class="cert-desc">Validates proficiency in Databricks SQL, data visualization, dashboard development, and transforming data into actionable business insights.</div>
         </div>
       </div>
     </div>
