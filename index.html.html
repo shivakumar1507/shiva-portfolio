@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shiva Kumar Devatha — Data Analyst | SQL | Power BI | BFSI</title>
-<meta name="description" content="Senior Data Analyst at TCS with 2.5+ years in BFSI domain. Expert in SQL, Power BI, ETL pipelines and regulatory reporting.">
+<meta name="description" content="Senior Data Analyst at TCS with 3+ years in BFSI domain. Expert in SQL, Power BI, ETL pipelines and regulatory reporting.">
 <meta name="keywords" content="Data Analyst, SQL, Power BI, BFSI, TCS, ETL, Python, Hyderabad">
 <meta property="og:title" content="Shiva Kumar Devatha — Data Analyst">
 <meta property="og:description" content="Data Analyst at TCS — SQL, Power BI, BFSI Analytics, ETL">
@@ -698,6 +698,40 @@ img,video,canvas,svg{max-width:100%;height:auto}
   .edu-right{text-align:left}
   .edu-period{font-size:.72rem;margin-bottom:.35rem}
   .edu-gpa{font-size:1rem}
+  
+  @media (max-width: 600px) {
+  .edu-card {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .edu-logo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .edu-logo img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .edu-details {
+    min-width: 0;
+  }
+
+  .edu-meta {
+    grid-column: 2;
+    text-align: left;
+    margin-top: 2px;
+  }
+
+  .edu-degree {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+}
 
   /* RESUME */
   #resume{padding:3.75rem 1rem}
@@ -858,6 +892,63 @@ img,video,canvas,svg{max-width:100%;height:auto}
   height: 30px;
   object-fit: contain;
 }
+
+/* EDUCATION CARD */
+
+.edu-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* College Logo */
+
+.edu-logo {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.edu-logo img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+/* Light mode */
+.edu-logo .logo-light {
+  display: block;
+}
+
+.edu-logo .logo-dark {
+  display: none;
+}
+
+/* Dark mode */
+html:not([data-theme="light"]) .edu-logo .logo-light {
+  display: none;
+}
+
+html:not([data-theme="light"]) .edu-logo .logo-dark {
+  display: block;
+}
+
+/* Education details */
+
+.edu-details {
+  flex: 1;
+}
+
+/* Year & CGPA */
+
+.edu-meta {
+  text-align: right;
+  flex-shrink: 0;
+}
+
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFC2N4PWQR"></script>
@@ -971,7 +1062,7 @@ img,video,canvas,svg{max-width:100%;height:auto}
         </div>
         <div class="float-card fc2">
           <svg width="11" height="11" fill="var(--purple2)" viewBox="0 0 24 24" style="display:inline;margin-right:4px"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9" stroke="white" stroke-width="1.5" fill="none"/></svg>
-          Power BI · BFSI<small>TCS BaNCS Ecosystem</small>
+          3× Databricks Certified<small>Data Engineering & Analytics</small>
         </div>
       </div>
     </div>
@@ -987,25 +1078,14 @@ img,video,canvas,svg{max-width:100%;height:auto}
       <p class="sec-sub">Turning raw BFSI data into business decisions — with precision, compliance, and clarity.</p>
     </div>
     <div class="about-grid">
-      <div class="about-text reveal">
-        <p>I am a <span class="hl">Data Analyst at Tata Consultancy Services</span> with 2.5+ years of hands-on experience in the BFSI domain, operating within the <span class="hl">TCS BaNCS</span> policy administration and financial reporting ecosystem.</p>
-        <p>My work centers on designing <span class="hl">25+ operational and regulatory SQL reports</span>, executing ETL pipelines across multiple source systems, and maintaining <span class="hl">99%+ data accuracy</span> across 50K+ records through systematic validation and reconciliation workflows.</p>
-        <p>I build and maintain <span class="hl">Power BI MIS dashboards</span> that translate complex financial data into executive-ready KPI views — while leveraging <span class="hl">Power Query automation</span> to cut manual reporting effort significantly.</p>
-        <p>Recognized with <span class="hl">three TCS awards</span> — Xcelerate Warrior, Certificate of Appreciation, and On The Spot — for performance excellence, compliance delivery, and project contribution in high-stakes BFSI environments.</p>
-        <div class="about-tags">
-          <span class="tag">SQL Engineering</span><span class="tag">BFSI Domain</span><span class="tag">TCS BaNCS</span>
-          <span class="tag">Power BI</span><span class="tag">ETL Pipelines</span><span class="tag">Data Validation</span>
-          <span class="tag">MIS Reporting</span><span class="tag">AI-Assisted Analytics</span>
-          <span class="tag">Regulatory Reporting</span><span class="tag">Python · Pandas</span>
-        </div>
-      </div>
+      <div class="about-text reveal"> <p> I am a <span class="hl">Data Analyst at Tata Consultancy Services</span> with <span class="hl">3+ years of experience</span> in the BFSI domain, working within the <span class="hl">TCS BaNCS</span> policy administration and financial reporting ecosystem. </p> <p> My work focuses on developing and optimizing <span class="hl">SQL and PL/SQL solutions</span>, delivering <span class="hl">25+ operational and regulatory reports</span>, and supporting ETL, data migration, validation, and reconciliation processes across multiple source systems. I have worked with <span class="hl">50K+ records</span> while maintaining <span class="hl">99%+ data accuracy</span> through systematic data quality and validation practices. </p> <p> Alongside my professional experience, I build end-to-end analytics and data engineering projects using <span class="hl">Python, SQL, Power BI, DAX, ETL, and Databricks</span>, transforming raw data into reliable pipelines, interactive dashboards, and actionable business insights. </p> <p> I hold three Databricks certifications: <span class="hl">Databricks Certified Data Engineer Professional</span>, <span class="hl">Databricks Certified Data Engineer Associate</span>, and <span class="hl">Databricks Certified Data Analyst Associate</span>, demonstrating expertise across data engineering, analytics, SQL, Python, and the Databricks Lakehouse platform. </p> <p> I have been recognized with <span class="hl">four TCS awards and one additional corporate recognition</span> for performance, project contribution, compliance delivery, and resolving critical production issues in the BFSI environment. </p> <div class="about-tags"> <span class="tag">SQL</span> <span class="tag">PL/SQL</span> <span class="tag">Python</span> <span class="tag">BFSI Domain</span> <span class="tag">TCS BaNCS</span> <span class="tag">Databricks</span> <span class="tag">Data Engineering</span> <span class="tag">Power BI</span> <span class="tag">ETL Pipelines</span> <span class="tag">Data Validation</span> <span class="tag">MIS Reporting</span> <span class="tag">DAX</span> <span class="tag">Pandas</span> <span class="tag">Data Analytics</span> <span class="tag">Regulatory Reporting</span> </div> </div>
       <div class="stats-grid reveal">
-        <div class="stat-card"><div class="stat-num sc-blue">2.5<span style="font-size:1.1rem">+</span></div><div class="stat-desc">Years at TCS</div></div>
+        <div class="stat-card"><div class="stat-num sc-blue">3<span style="font-size:1.1rem">+</span></div><div class="stat-desc">Years at TCS</div></div>
         <div class="stat-card"><div class="stat-num sc-purple">25<span style="font-size:1.1rem">+</span></div><div class="stat-desc">Reports Delivered</div></div>
         <div class="stat-card"><div class="stat-num sc-green">50<span style="font-size:1.1rem">+</span></div><div class="stat-desc">Issues Resolved</div></div>
         <div class="stat-card"><div class="stat-num sc-amber">99<span style="font-size:.9rem">%+</span></div><div class="stat-desc">Data Accuracy</div></div>
         <div class="stat-card"><div class="stat-num sc-red">50<span style="font-size:1.1rem">K+</span></div><div class="stat-desc">Records Managed</div></div>
-        <div class="stat-card"><div class="stat-num" style="color:var(--blue2)">3</div><div class="stat-desc">TCS Awards</div></div>
+        <div class="stat-card"><div class="stat-num" style="color:var(--blue2)">4</div><div class="stat-desc">TCS Awards</div></div>
       </div>
     </div>
   </div>
@@ -1027,26 +1107,26 @@ img,video,canvas,svg{max-width:100%;height:auto}
         <div class="skill-cat">Languages &amp; Querying</div>
         <div class="chips"><span class="chip">SQL</span><span class="chip">PL/SQL</span><span class="chip">Python</span></div>
       </div>
+	  <div class="skill-card reveal">
+        <div class="skill-icon-wrap ic-t">
+          <svg width="20" height="20" fill="none" stroke="var(--green)" stroke-width="2" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+        </div>
+        <div class="skill-cat">Data Engineering</div>
+        <div class="chips"><span class="chip">ETL</span><span class="chip">Databricks</span><span class="chip">Apache Spark</span><span class="chip">Data Pipelines</span><span class="chip">Data Cleaning</span><span class="chip">Data Migration</span><span class="chip">Data Governance</span></div>
+      </div>
       <div class="skill-card reveal">
         <div class="skill-icon-wrap ic-p">
           <svg width="20" height="20" fill="none" stroke="var(--purple2)" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
         </div>
-        <div class="skill-cat">BI &amp; Visualization</div>
-        <div class="chips"><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">DAX</span><span class="chip">Data Visualization</span><span class="chip">Data Storytelling</span><span class="chip">Ad hoc Analysis</span></div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="skill-icon-wrap ic-t">
-          <svg width="20" height="20" fill="none" stroke="var(--green)" stroke-width="2" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
-        </div>
-        <div class="skill-cat">Data Tools</div>
-        <div class="chips"><span class="chip">ETL</span><span class="chip">Power Query</span><span class="chip">Pandas</span><span class="chip">Alteryx</span><span class="chip">Data Cleaning</span><span class="chip">Data Modelling</span><span class="chip">Data Governance</span></div>
+        <div class="skill-cat">BI &amp; Analytics</div>
+        <div class="chips"><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">DAX</span><span class="chip">Power Query</span><span class="chip">KPI Development</span><span class="chip">Ad hoc Analysis</span></div>
       </div>
       <div class="skill-card reveal">
         <div class="skill-icon-wrap ic-a">
           <svg width="20" height="20" fill="none" stroke="var(--amber)" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
         </div>
-        <div class="skill-cat">Reporting &amp; Operations</div>
-        <div class="chips"><span class="chip">KPI Development</span><span class="chip">MIS Reporting</span><span class="chip">Report Automation</span><span class="chip">Data Migration</span><span class="chip">Stakeholder Reporting</span></div>
+        <div class="skill-cat">Reporting &amp; Business</div>
+        <div class="chips"><span class="chip">Regulatory Reporting</span><span class="chip">MIS Reporting</span><span class="chip">Report Automation</span><span class="chip">Maintaining Jobs</span><span class="chip">Stakeholder Reporting</span></div>
       </div>
       <div class="skill-card reveal">
         <div class="skill-icon-wrap ic-k">
@@ -1065,7 +1145,7 @@ img,video,canvas,svg{max-width:100%;height:auto}
     <div class="reveal">
       <span class="sec-eyebrow">// professional experience</span>
       <h2 class="sec-title">Where Impact<br>Was Delivered</h2>
-      <p class="sec-sub">2.5+ years of measurable contribution in enterprise BFSI analytics at TCS.</p>
+      <p class="sec-sub">3+ years of measurable contribution in enterprise BFSI analytics at TCS.</p>
     </div>
     <div class="timeline">
       <div class="tl-item reveal">
@@ -2446,19 +2526,43 @@ function changeStockImage(direction, event) {
       <span class="sec-eyebrow">// education</span>
       <h2 class="sec-title" style="margin-bottom:2rem">Academic Foundation</h2>
     </div>
+
     <div class="edu-card reveal">
-      <div>
+
+      <!-- College Logo -->
+      <div class="edu-logo">
+			<!-- Light mode -->
+			<img src="assets/bits-transparent.png"
+			class="logo-light"
+			alt="Balaji Institute of Technology & Science logo">
+
+			<!-- Dark mode -->
+			<img src="assets/bits-dark-mode.png"
+			class="logo-dark"
+			alt="Balaji Institute of Technology & Science logo">
+		</div>
+
+      <!-- Education Details -->
+      <div class="edu-details">
         <div class="edu-degree">B.E. in Computer Science Engineering</div>
         <div class="edu-school">Balaji Institute of Technology &amp; Science</div>
         <div class="edu-loc">
-          <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:inline;margin-right:3px;vertical-align:middle"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <svg width="11" height="11" fill="none" stroke="currentColor"
+               stroke-width="2" viewBox="0 0 24 24"
+               style="display:inline;margin-right:3px;vertical-align:middle">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
           Warangal, Telangana
         </div>
       </div>
-      <div style="text-align:right">
+
+      <!-- Year & CGPA -->
+      <div class="edu-meta">
         <div class="edu-period">2019 – 2023</div>
         <div class="edu-gpa">7.0 <small>/ 10.0 CGPA</small></div>
       </div>
+
     </div>
   </div>
 </section>
@@ -2473,7 +2577,7 @@ function changeStockImage(direction, event) {
     <div class="resume-card reveal">
       <div class="resume-info">
         <h3>Shiva Kumar Devatha</h3>
-        <p>My resume is ATS-optimized and tailored for Data Analyst, BI Analyst, and Business Analyst roles across BFSI, fintech, retail, and enterprise analytics environments. It highlights quantified business impact, relevant technical skills, and proven TCS-scale delivery.</p>
+        <p>My resume is tailored for Data Analyst, BI Developer, and Data Engineer roles across BFSI, fintech, retail, and enterprise analytics environments. It highlights quantified business impact, relevant technical skills, and proven TCS-scale delivery.</p>
         <div class="ats-tags">
           <span class="ats-tag">✓ ATS Optimized</span>
           <span class="ats-tag">✓ Quantified Impact</span>
@@ -2501,7 +2605,7 @@ function changeStockImage(direction, event) {
     <div class="reveal">
       <span class="sec-eyebrow">// contact</span>
       <h2 class="sec-title">Let's Connect</h2>
-      <p class="sec-sub">Open to Data Analyst, BI Analyst, and Business Analyst opportunities. Let's discuss how I can add value to your team.</p>
+      <p class="sec-sub">Open to Data Analyst, BI Developer, and Data Engineer opportunities. Let's discuss how I can add value to your team.</p>
     </div>
     <div class="contact-grid">
       <div class="reveal">
@@ -2522,10 +2626,6 @@ function changeStockImage(direction, event) {
           <div class="ci-item" style="cursor:default">
             <div class="ci-icon-box cib-g"><svg width="16" height="16" fill="none" stroke="var(--green)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
             <div><div class="ci-lbl">Location</div><div class="ci-val">Hyderabad, Telangana — 500091</div></div>
-          </div>
-          <div class="ci-item" style="cursor:default">
-            <div class="ci-icon-box cib-a"><svg width="16" height="16" fill="none" stroke="var(--amber)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
-            <div><div class="ci-lbl">Phone</div><div class="ci-val">+91 9908080045</div></div>
           </div>
         </div>
       </div>
