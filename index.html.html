@@ -949,6 +949,25 @@ html:not([data-theme="light"]) .edu-logo .logo-dark {
   flex-shrink: 0;
 }
 
+/* Certification verification link */
+.cert-verify {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 14px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.cert-verify:hover {
+  opacity: 0.8;
+  transform: translateX(3px);
+}
+
+
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFC2N4PWQR"></script>
@@ -2359,59 +2378,159 @@ function changeStockImage(direction, event) {
     <div class="reveal">
       <span class="sec-eyebrow">// certifications</span>
       <h2 class="sec-title">Credentials &amp; Learning</h2>
-      <p class="sec-sub">Structured programs reinforcing real-world analytical expertise.</p>
+      <p class="sec-sub">Professional certifications and structured learning supporting my data analytics and engineering expertise.</p>
     </div>
+
     <div class="certs-grid">
-	<div class="cert-card reveal">
+
+      <!-- Databricks Data Engineer Professional -->
+      <div class="cert-card reveal">
         <div class="cert-icon cert-icon-databricks">
-			<img src="assets/databricks.svg" alt="Databricks Logo">
-		</div>
+          <img src="assets/databricks.svg" alt="Databricks Logo">
+        </div>
+
         <div>
-          <div class="cert-title">Databricks Certified Data Engineer Professional</div>
-          <div class="cert-org" style="color:#ff6333">Databricks </div>
-          <div class="cert-desc">Validates advanced expertise in designing, developing, optimizing, and troubleshooting scalable data engineering solutions using Databricks, Apache Spark, SQL, and Python.</div>
+          <div class="cert-title">
+            Databricks Certified Data Engineer Professional
+          </div>
+
+          <div class="cert-org" style="color:#ff6333">
+            Databricks
+          </div>
+
+          <div class="cert-desc">
+            Advanced data engineering with Databricks, Apache Spark, SQL, and Python, including development, optimization, and troubleshooting of scalable data solutions.
+          </div>
+
+          <a href="https://credentials.databricks.com/aedeafd7-1381-4622-b03c-6c842df6a838#acc.Q1lXu8O0"
+             class="cert-verify"
+             target="_blank"
+             rel="noopener noreferrer">
+            Verify Credential ↗
+          </a>
         </div>
       </div>
-	  <div class="cert-card reveal">
+
+
+      <!-- Databricks Data Engineer Associate -->
+      <div class="cert-card reveal">
         <div class="cert-icon cert-icon-databricks">
-			<img src="assets/databricks.svg" alt="Databricks Logo">
-		</div>
+          <img src="assets/databricks.svg" alt="Databricks Logo">
+        </div>
+
         <div>
-          <div class="cert-title">Databricks Certified Data Engineer Associate</div>
-          <div class="cert-org" style="color:#ff6333">Databricks </div>
-          <div class="cert-desc">Validates proficiency in building data pipelines, data ingestion, transformation, and processing using Databricks and Apache Spark, with a focus on developing reliable and scalable data engineering solutions.</div>
+          <div class="cert-title">
+            Databricks Certified Data Engineer Associate
+          </div>
+
+          <div class="cert-org" style="color:#ff6333">
+            Databricks
+          </div>
+
+          <div class="cert-desc">
+            Proficiency in building data pipelines, ingestion, transformation,
+            and processing using Databricks and Apache Spark.
+          </div>
+
+          <a href="https://credentials.databricks.com/98e8b693-5d77-46d7-b6be-313f39d57b87#acc.JvHCeafP"
+             class="cert-verify"
+             target="_blank"
+             rel="noopener noreferrer">
+            Verify Credential ↗
+          </a>
         </div>
       </div>
-	  <div class="cert-card reveal">
+
+
+      <!-- Databricks Data Analyst Associate -->
+      <div class="cert-card reveal">
         <div class="cert-icon cert-icon-databricks">
-			<img src="assets/databricks.svg" alt="Databricks Logo">
-		</div>
+          <img src="assets/databricks.svg" alt="Databricks Logo">
+        </div>
+
         <div>
-          <div class="cert-title">Databricks Certified Data Analyst Associate</div>
-          <div class="cert-org" style="color:#ff6333">Databricks </div>
-          <div class="cert-desc">Validates proficiency in Databricks SQL, data visualization, dashboard development, and transforming data into actionable business insights.</div>
+          <div class="cert-title">
+            Databricks Certified Data Analyst Associate
+          </div>
+
+          <div class="cert-org" style="color:#ff6333">
+            Databricks
+          </div>
+
+          <div class="cert-desc">
+            Proficiency in Databricks SQL, data visualization, dashboard
+            development, and transforming data into actionable business insights.
+          </div>
+
+          <a href="https://credentials.databricks.com/161900fd-30d2-4df6-a293-0a9ec3b4faa5#acc.DWEGO9ja"
+             class="cert-verify"
+             target="_blank"
+             rel="noopener noreferrer">
+            Verify Credential ↗
+          </a>
         </div>
       </div>
+
+
+      <!-- FLM -->
       <div class="cert-card reveal">
         <div class="cert-icon cert-icon-frontlines">
-			<img src="assets/flm.png" alt="Frontlines Edu-tech Logo">
-		</div>
+          <img src="assets/flm.png" alt="Frontlines Edu-tech Logo">
+        </div>
+
         <div>
-          <div class="cert-title">AI-Powered Data Analytics</div>
-          <div class="cert-org">Frontlines Edu-tech Private Limited</div>
-          <div class="cert-desc">SQL, Python, Power BI &amp; Excel with Copilot; hands-on EDA, statistics, and Generative AI tools for analysis and automation.</div>
+          <div class="cert-title">
+            AI-Powered Data Analytics
+          </div>
+
+          <div class="cert-org">
+            Frontlines Edu-tech Private Limited
+          </div>
+
+          <div class="cert-desc">
+            SQL, Python, Power BI, and Excel with Copilot, covering EDA,
+            statistics, and Generative AI tools for analysis and automation.
+          </div>
+
+          <a href="https://www.frontlinesedutech.com/share-certificate?serialno=484TKOHL"
+             class="cert-verify"
+             target="_blank"
+             rel="noopener noreferrer">
+            Verify Credential ↗
+          </a>
         </div>
       </div>
+
+
+      <!-- Cisco -->
       <div class="cert-card reveal">
         <div class="cert-icon cert-icon-cisco">
-			<img src="assets/cisco.svg" alt="Cisco Networking Academy Logo">
-		</div>
+          <img src="assets/cisco.svg" alt="Cisco Networking Academy Logo">
+        </div>
+
         <div>
-          <div class="cert-title">Data Analytics Essentials</div>
-          <div class="cert-org">Cisco Networking Academy</div>
-          <div class="cert-desc">Full analytics process, statistical techniques, and hands-on labs using Excel, SQL, and Tableau with portfolio project delivery.</div>
+          <div class="cert-title">
+            Data Analytics Essentials
+          </div>
+
+          <div class="cert-org">
+            Cisco Networking Academy
+          </div>
+
+          <div class="cert-desc">
+            Foundations of data analytics, statistical techniques, Excel,
+            SQL, and Tableau with hands-on portfolio work.
+          </div>
+
+          <a href="https://www.credly.com/badges/0ca30f60-e6fd-4100-84f0-e55e98ee3b19/linked_in_profile"
+             class="cert-verify"
+             target="_blank"
+             rel="noopener noreferrer">
+            Verify Credential ↗
+          </a>
         </div>
       </div>
+
     </div>
   </div>
 </section>
