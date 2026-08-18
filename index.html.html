@@ -1371,62 +1371,78 @@ html:not([data-theme="light"]) .edu-logo .logo-dark {
 }
 .cs-preview-area:hover .cs-zoom-hint { opacity:0 }
 /* ── Dashboard Gallery ── */
-.cs-gallery-btn{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  z-index:5;
+.cs-gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
 
-  width:38px;
-  height:38px;
+  width: 38px;
+  height: 38px;
 
-  border:none;
-  border-radius:50%;
+  border-radius: 50%;
+  border: 1px solid var(--border2);
 
-  background:rgba(7,9,15,.8);
-  border:1px solid var(--border2);
+  background: var(--card);
+  color: var(--text);
 
-  color:var(--text);
-  cursor:pointer;
+  cursor: pointer;
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  transition:all .22s ease;
+  transition: all .22s ease;
 }
 
-.cs-gallery-btn:hover{
-  background:var(--blue);
-  color:#fff;
-  border-color:var(--blue);
+.cs-gallery-btn:hover {
+  background: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
 }
 
-.cs-prev{
-  left:12px;
+.cs-prev {
+  left: 12px;
 }
 
-.cs-next{
-  right:12px;
+.cs-next {
+  right: 12px;
 }
 
-.cs-slide-indicator{
-  position:absolute;
-  bottom:14px;
-  left:50%;
-  transform:translateX(-50%);
+.cs-slide-indicator {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
 
-  background:rgba(7,9,15,.82);
-  border:1px solid var(--border2);
+  background: var(--card);
+  border: 1px solid var(--border2);
 
-  padding:.35rem .8rem;
-  border-radius:20px;
+  padding: .35rem .8rem;
+  border-radius: 20px;
 
-  font-size:.72rem;
-  font-family:var(--mono);
+  font-size: .72rem;
+  font-family: var(--mono);
 
-  color:var(--text2);
-  z-index:5;
+  color: var(--text2);
+  z-index: 5;
+}
+
+/* ── Mobile Gallery ── */
+@media (max-width: 600px) {
+  .cs-gallery-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 17px;
+  }
+
+  .cs-prev {
+    left: 7px;
+  }
+
+  .cs-next {
+    right: 7px;
+  }
 }
 .cs-right-footer {
   padding:1.2rem 2rem;
@@ -1567,6 +1583,62 @@ html:not([data-theme="light"]) .edu-logo .logo-dark {
 .cs-slide-indicator{
   font-size:.65rem;
   padding:.3rem .65rem;
+}
+@media (max-width: 600px) {
+
+  /* Dashboard preview */
+  .cs-preview-area {
+    padding: 1.1rem;
+    min-height: 200px;
+  }
+
+  /* Gallery arrows */
+  .cs-gallery-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  /* Slide indicator */
+  .cs-slide-indicator {
+    font-size: .65rem;
+    padding: .3rem .65rem;
+  }
+
+  /* Zoom hint → icon only */
+  .cs-zoom-hint {
+    font-size: 0;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cs-zoom-hint svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Footer bar */
+  .cs-right-footer {
+    padding: 1rem 1.1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .55rem;
+  }
+
+  .cs-impact-line {
+    font-size: .76rem;
+    line-height: 1.55;
+  }
+
+  .cs-right-footer .cs-btn {
+    font-size: .72rem;
+    padding: .38rem .8rem;
+    width: auto;
+  }
 }
 }
 </style>
