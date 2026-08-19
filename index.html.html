@@ -245,47 +245,6 @@ h1.hero-name span{background:linear-gradient(135deg,var(--blue),var(--purple2));
 .fc2{top:12px;right:-55px;color:var(--purple2);animation:floatY 4s 1.8s ease-in-out infinite}
 .fc2 small{display:block;font-size:.63rem;color:var(--text3);font-weight:400;margin-top:.1rem}
 
-@media (max-width: 768px) {
-  .hero-photo-col {
-    overflow: visible;
-    position: relative;
-  }
-
-  .float-card {
-    white-space: normal;   /* allow text wrap so cards can shrink */
-    max-width: 140px;
-    font-size: 0.68rem;
-    padding: 0.45rem 0.65rem;
-  }
-
-  .fc1 {
-    left: 4px;      /* pull inward from -55px */
-    bottom: -10px;
-  }
-
-  .fc2 {
-    right: 4px;     /* pull inward from -55px */
-    top: -10px;
-  }
-}
-
-@media (max-width: 480px) {
-  /* On very small screens, stacking below the photo is safer than floating */
-  .float-card {
-    position: static;
-    display: block;
-    margin: 8px auto;
-    max-width: 220px;
-    text-align: center;
-  }
-
-  .hero-photo-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 /* ========== SECTION BASE ========== */
 section{padding:6rem 2.5rem}
 .container{max-width:1160px;margin:0 auto}
