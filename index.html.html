@@ -880,7 +880,7 @@ img,video,canvas,svg{max-width:100%;height:auto}
   height: 30px;
   object-fit: contain;
 }
-
+<!-- 
 .cert-icon-frontlines {
   background: rgba(70, 110, 255, 0.10);
   border: 1px solid rgba(70, 110, 255, 0.25);
@@ -892,7 +892,7 @@ img,video,canvas,svg{max-width:100%;height:auto}
 .cert-icon-frontlines img {
   width: 30px;
   height: 30px;
-  object-fit: contain;
+  object-fit: contain;-->
 }
 
 .cert-icon-microsoft {
@@ -915,6 +915,20 @@ img,video,canvas,svg{max-width:100%;height:auto}
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.cert-icon-claude {
+  background: rgba(217, 119, 87, 0.10);
+  border: 1px solid rgba(217, 119, 87, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-icon-claude img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 
 /* College Logo */
@@ -2521,6 +2535,36 @@ function changeStockImage(direction, event) {
 
     <div class="certs-grid">
 	
+	<!-- Claude Certified Developer - Foundations -->
+<div class="cert-card reveal">
+  <div class="cert-icon cert-icon-claude">
+    <img src="assets/claude.svg" alt="Claude Logo">
+  </div>
+
+  <div>
+    <div class="cert-title">
+      Claude Certified Developer - Foundations
+    </div>
+
+    <div class="cert-org" style="color:#d97757">
+      Anthropic
+    </div>
+
+    <div class="cert-desc">
+      Foundational knowledge of building effective applications with Claude,
+      including prompt engineering, AI-assisted development, and responsible
+      use of generative AI.
+    </div>
+
+    <a href="https://www.credly.com/badges/2029a686-2f08-48cf-90a7-455ba9fedbcc/linked_in_profile"
+       class="cert-verify"
+       target="_blank"
+       rel="noopener noreferrer">
+      Verify Credential ↗
+    </a>
+  </div>
+</div>
+	
 	<!-- Microsoft Fabric Analytics Engineer Associate -->
 <div class="cert-card reveal">
   <div class="cert-icon cert-icon-microsoft">
@@ -2639,8 +2683,8 @@ function changeStockImage(direction, event) {
         </div>
       </div>
 
-
-      <!-- FLM -->
+	
+      <!-- FLM 
       <div class="cert-card reveal">
         <div class="cert-icon cert-icon-frontlines">
           <img src="assets/flm.png" alt="Frontlines Edu-tech Logo">
@@ -2667,7 +2711,7 @@ function changeStockImage(direction, event) {
             Verify Credential ↗
           </a>
         </div>
-      </div>
+      </div> -->
 
 
       <!-- Cisco -->
