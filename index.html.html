@@ -866,7 +866,20 @@ img,video,canvas,svg{max-width:100%;height:auto}
   height: 28px;
   object-fit: contain;
 }
+.cert-icon-microsoft {
+  background: rgba(0, 120, 212, 0.10);
+  border: 1px solid rgba(0, 120, 212, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.cert-icon-microsoft img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+<!--
 .cert-icon-cisco {
   background: rgba(4, 159, 217, 0.10);
   border: 1px solid rgba(4, 159, 217, 0.25);
@@ -879,7 +892,7 @@ img,video,canvas,svg{max-width:100%;height:auto}
   width: 30px;
   height: 30px;
   object-fit: contain;
-}
+} -->
 <!-- 
 .cert-icon-frontlines {
   background: rgba(70, 110, 255, 0.10);
@@ -2535,6 +2548,37 @@ function changeStockImage(direction, event) {
 
     <div class="certs-grid">
 	
+	<!-- Microsoft PL-300 -->
+<div class="cert-card reveal">
+  <div class="cert-icon cert-icon-microsoft">
+    <img src="assets/microsoft.png"
+         alt="Microsoft Logo">
+  </div>
+
+  <div>
+    <div class="cert-title">
+      Microsoft Certified: Power BI Data Analyst Associate
+    </div>
+
+    <div class="cert-org">
+      Microsoft
+    </div>
+
+    <div class="cert-desc">
+      Demonstrates expertise in preparing, modeling, visualizing, and
+      analyzing data using Microsoft Power BI, including Power Query,
+      DAX, semantic models, reports, and dashboards.
+    </div>
+
+    <a href="https://learn.microsoft.com/en-us/users/shivakumardevatha-9235/credentials/38fbb7a24e66e1ac?ref=https%3A%2F%2Fwww.linkedin.com%2F"
+       class="cert-verify"
+       target="_blank"
+       rel="noopener noreferrer">
+      Verify Credential ↗
+    </a>
+  </div>
+</div>
+	
 	<!-- Claude Certified Developer - Foundations -->
 <div class="cert-card reveal">
   <div class="cert-icon cert-icon-claude">
@@ -2713,8 +2757,8 @@ function changeStockImage(direction, event) {
         </div>
       </div> -->
 
-
-      <!-- Cisco -->
+		
+      <!-- Cisco --><!--
       <div class="cert-card reveal">
         <div class="cert-icon cert-icon-cisco">
           <img src="assets/cisco.svg" alt="Cisco Networking Academy Logo">
@@ -2744,7 +2788,8 @@ function changeStockImage(direction, event) {
       </div>
 
     </div>
-  </div>
+  </div> -->
+  
 </section>
 
 <!-- ACHIEVEMENTS -->
